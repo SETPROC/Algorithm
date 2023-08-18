@@ -8,7 +8,7 @@ def binary_search_sub(a, x, start, end):
     if start > end:
         return -1
     mid = (start + end) // 2 # 탐색 범위의 중간 위치
-    if x = = a[mid]: # 발견!
+    if x == a[mid]: # 발견!
         return mid
     elif x > a[mid]: # 찾는 값이 더 크면 중간을 기준으로 오른쪽 값을 대상으로 재귀 호출
         return binary_search_sub(a, x, mid + 1, end)
